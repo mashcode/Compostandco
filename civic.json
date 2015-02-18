@@ -1,0 +1,17 @@
+{
+        "status": "Alpha",
+        "thumbnailUrl": "",
+        "bornAt": "BetaNYC Hacknights",
+        "geography": "NYC",
+        "politicalEntity":"Department of Sanitation",
+        "type":"Web App",
+        "needs": [
+                {"need": "Nodejs"}
+        ],
+        "categories": [
+                {"category": "Community"},
+                {"category": "Education"},
+                {"category": "Conservation"},
+                {"category": "Open Data"}
+        ]
+}

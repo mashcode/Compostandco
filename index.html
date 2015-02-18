@@ -1,0 +1,44 @@
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>Web</title><meta name=description content=""><meta name=viewport content="width=device-width,initial-scale=1"><!-- Place favicon.ico and apple-touch-icon(s) in the root directory --><link rel=stylesheet href=/css/main.45c3.css><link rel=stylesheet href="https://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css"><script src=/js/head-scripts.d1e4.js></script><style>html, body, #map {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }</style></head><body><!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><div class=container><nav class="navbar navbar-default navbar-fixed-top"><div class=container-fluid><div class=navbar-header><h1>Urban Decay</h1></div><div class="collapse navbar-collapse"></div></div></nav><section style=""><iframe width=100% height=580 frameborder=0 src=https://mashcode.cartodb.com/viz/bbffd3ea-3916-11e4-bde4-0edbca4b5057/embed_map allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe><div id=map></div><!-- include cartodb.js library --><script src=https://libs.cartocdn.com/cartodb.js/v3/cartodb.js></script><script>function main() {
+        cartodb.createVis('map', 'https://mashcode.cartodb.com/api/v2/viz/bbffd3ea-3916-11e4-bde4-0edbca4b5057/viz.json', {
+            shareable: true,
+            title: false,
+            description: false,
+            search: true,
+            tiles_loader: true,
+            center_lat: 40.683169,
+            center_lon: -73.935697,
+            zoom: 10
+        })
+        .done(function(vis, layers) {
+          // layer 0 is the base layer, layer 1 is cartodb layer
+          // setInteraction is disabled by default
+          layers[1].setInteraction(true);
+          layers[1].on('featureOver', function(e, pos, latlng, data) {
+            cartodb.log.log(e, pos, latlng, data);
+          });
+
+          // you can get the native map to work with it
+          // depending if you use google maps or leaflet
+          map = vis.getNativeMap();
+
+          // now, perform any operations you need
+          // map.setZoom(3)
+          // map.setCenter(new google.maps.Latlng(...))
+        })
+        .error(function(err) {
+          console.log(err);
+        });
+      }
+
+      window.onload = main;</script></section><section><div class=row><div class=col-md-6><h3>Compost Site Data</h3><ul><li><a href=https://github.com/mashcode/NYCompost/blob/gh-pages/Food_Scrap_Drop_Off_Sites_merged.csv>Compost Collection Sites</a> (csv)</li><li><a href=https://github.com/mashcode/NYCompost/blob/gh-pages/Food_Scrap_Drop_Off_Sites_merged.geojson>Compost Collection Sites</a> (geojason)</li></ul></div><div class=col-md-2><div class=soc-med><!--a href="https://twitter.com/mashcode" class="btn btn-primary btn-lg active" role="button">Twitter <span><i class="fa fa-twitter"></i></span></a--><a href=https://github.com/mashcode/NYCompost class="btn btn-black btn-lg active" role=button>Github <span><i class="fa fa-github-alt"></i></span></a></div></div></div></section><footer class="navbar navbar-inverse navbar-fixed-bottom">Creative Commons</footer></div><script src=//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js></script><script>window.jQuery || document.write('<script src="/_bower_components/jquery/jquery.min.js"><\/script>')</script><script src=/js/script.d16b.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');</script></body></html>

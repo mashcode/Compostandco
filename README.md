@@ -1,4 +1,4 @@
-Urban Decay
+Urban  aka Compost Club
 =========
 
 ###City food scrap collection & composting [map](https://mashcode.github.io/NYCompost/)

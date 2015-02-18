@@ -1,4 +1,4 @@
-NYCompost
+Urban Decay
 =========
 
 ###City food scrap collection & composting [map](https://mashcode.github.io/NYCompost/)

@@ -1,42 +1,38 @@
-<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>UrbanDecay aka Compost Club</title><meta name=description content=""><meta name=viewport content="width=device-width,initial-scale=1"><!-- Place favicon.ico and apple-touch-icon(s) in the root directory --><link rel=stylesheet href=/css/main.23cc.css><link rel=stylesheet href="https://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css"><script src=/js/head-scripts.d1e4.js></script><style>html, body, #map {
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>UrbanDecay aka Compost Club</title><meta name=description content=""><meta name=viewport content="width=device-width,initial-scale=1"><!-- Place favicon.ico and apple-touch-icon(s) in the root directory --><link rel=stylesheet href=/css/main.23cc.css><link rel=stylesheet href="http://libs.cartocdn.com/cartodb.js/v3/3.12/themes/css/cartodb.css"><script src=/js/head-scripts.d1e4.js></script><style>html, body, #map {
         height: 100%;
         padding: 0;
         margin: 0;
+      }
+      #map {
+        height: 500px;
+      }
+      #data {
+        margin-top: 20px;
       }</style></head><body><!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><div class=container><nav class="navbar navbar-default navbar-fixed-top"><div class=container-fluid><div class=navbar-header><h1>UrbanDecay</h1></div><div class="collapse navbar-collapse"></div></div></nav><section><iframe width=100% height=520 frameborder=0 src=http://mashcode.cartodb.com/viz/a33919ae-bdd0-11e4-b22f-0e4fddd5de28/embed_map allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe><div id=map></div><!-- include cartodb.js library --><script src=https://libs.cartocdn.com/cartodb.js/v3/cartodb.js></script><script>function main() {
-        cartodb.createVis('map', 'https://mashcode.cartodb.com/api/v2/viz/bbffd3ea-3916-11e4-bde4-0edbca4b5057/viz.json', {
-            shareable: true,
-            title: false,
-            description: false,
-            search: true,
-            tiles_loader: true,
-            center_lat: 40.683169,
-            center_lon: -73.935697,
-            zoom: 10
-        })
+    <![endif]--><div class=container><nav class="navbar navbar-default navbar-fixed-top"><div class=container-fluid><div class=navbar-header><h1>UrbanDecay</h1></div><div class="collapse navbar-collapse"></div></div></nav><section><!--iframe width='100%' height='520' frameborder='0' src='http://mashcode.cartodb.com/viz/a33919ae-bdd0-11e4-b22f-0e4fddd5de28/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe--><div id=map></div><script>window.onload = function() {
+        cartodb.createVis('map', 'http://mashcode.cartodb.com/api/v2/viz/a33919ae-bdd0-11e4-b22f-0e4fddd5de28/viz.json')
         .done(function(vis, layers) {
           // layer 0 is the base layer, layer 1 is cartodb layer
           // setInteraction is disabled by default
           layers[1].setInteraction(true);
-          layers[1].on('featureOver', function(e, pos, latlng, data) {
-            cartodb.log.log(e, pos, latlng, data);
+          layers[1].on('featureOver', function(e, latlng, pos, data, layerNumber) {
+          cartodb.log.log(e, latlng, pos, data, layerNumber);
           });
 
           // you can get the native map to work with it
-          // depending if you use google maps or leaflet
-          map = vis.getNativeMap();
+          var map = vis.getNativeMap();
 
           // now, perform any operations you need
           // map.setZoom(3)
           // map.setCenter(new google.maps.Latlng(...))
-        })
-        .error(function(err) {
-          console.log(err);
         });
+        //.error(function(err) {
+          //console.log(err);
+        //});
       }
 
-      window.onload = main;</script></section><section><div class=row><div class=col-md-6><!--h3>Compost Site Data</h3--><ul><li><a href=https://github.com/mashcode/UrbanDecay/blob/gh-pages/food_scrap_drop_off_sites_merged.csv>Compost collection site data</a> (csv)</li><li><a href=https://github.com/mashcode/UrbanDecay/blob/gh-pages/food_scrap_drop_off_sites_merged.geojson>Compost collection site data</a> (geojason)</li></ul></div><div class=col-md-2><div class=soc-med><!--a href="https://twitter.com/mashcode" class="btn btn-primary btn-lg active" role="button">Twitter <span><i class="fa fa-twitter"></i></span></a--><a href=https://github.com/mashcode/urbandecay class="btn btn-black btn-lg active" role=button>Github <span><i class="fa fa-github-alt"></i></span></a></div></div></div></section><footer class="navbar navbar-inverse navbar-fixed-bottom"><a rel=license href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons</a></footer></div><script src=//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js></script><script>window.jQuery || document.write('<script src="/_bower_components/jquery/jquery.min.js"><\/script>')</script><script src=/js/script.d16b.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      //window.onload = main;</script></section><section id=data><div class=row><div class=col-md-6><!--h3>Compost Site Data</h3--><ul><li><a href=https://github.com/mashcode/UrbanDecay/blob/gh-pages/food_scrap_drop_off_sites_merged.csv>Compost collection site data</a> (csv)</li><li><a href=https://github.com/mashcode/UrbanDecay/blob/gh-pages/food_scrap_drop_off_sites_merged.geojson>Compost collection site data</a> (geojason)</li></ul></div><div class=col-md-2><div class=soc-med><!--a href="https://twitter.com/mashcode" class="btn btn-primary btn-lg active" role="button">Twitter <span><i class="fa fa-twitter"></i></span></a--><a href=https://github.com/mashcode/urbandecay class="btn btn-black btn-lg active" role=button>Github <span><i class="fa fa-github-alt"></i></span></a></div></div></div></section><footer class="navbar navbar-inverse navbar-fixed-bottom"><a rel=license href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons</a></footer></div><!-- include cartodb.js library --><script src=http://libs.cartocdn.com/cartodb.js/v3/3.12/cartodb.js></script><script src=//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js></script><script>window.jQuery || document.write('<script src="/_bower_components/jquery/jquery.min.js"><\/script>')</script><script src=/js/script.d16b.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
   e.src='//www.google-analytics.com/analytics.js';

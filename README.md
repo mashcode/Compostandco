@@ -1,9 +1,9 @@
-Urban  aka Compost Club
+Urban Decay aka CompostClub
 =========
 
 ###City food scrap collection & composting [map](https://mashcode.github.io/NYCompost/)
 
-Model and network neighborhood food scrap diversion using crowd-sourced metadata
+Collect and map neighborhood food scrap diversion data using crowd-sourced metadata
 
 <!-- ![Comment](https://cdn1.iconfinder.com/data/icons/streamline-comments-chat/60/cell-10-10-480.png "Kickstarter Comment")
 -->

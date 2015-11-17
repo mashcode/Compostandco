@@ -1,11 +1,11 @@
-Urban Decay
+CompostandCompany
 =========
 
-###City food scrap collection & composting [map](https://mashcode.github.io/NYCompost/)
+<!-- ###City food scrap collection & composting [map](https://mashcode.github.io/NYCompost/)
 
 Model and network neighborhood food scrap diversion using crowd-sourced metadata
 
-<!-- ![Comment](https://cdn1.iconfinder.com/data/icons/streamline-comments-chat/60/cell-10-10-480.png "Kickstarter Comment")
+![Comment](https://cdn1.iconfinder.com/data/icons/streamline-comments-chat/60/cell-10-10-480.png "Kickstarter Comment")
 -->
 
 <!--
@@ -29,7 +29,6 @@ So the food(scraps) to compost story aka Compost Club is obviously one of scienc
 Look at the center of any disruptive idea, you'll always find an activist with questions.
 
 See Gihub project for more bullet points & resources =>
--->
 
 Look at the center of any disruptive idea, you'll always find an activist with questions.
 
@@ -105,3 +104,4 @@ _Cradle to Cradle: Remaking the way we make things,_ 2002. Michael Braungart and
   * [CBC (Citizens Budget Commission) audit] (http://www.cbcny.org/sites/default/files/REPORT_GarbageFacts_05222014.pdf)
   * [NYC Composting Project] (http://www1.nyc.gov/site/dsny/resources/initiatives/nyc-compost-project.page)
     - [DSNY Community Composting Report](http://www1.nyc.gov/assets/dsny/downloads/pdf/studies-and-reports/2014-community-composting-report-LL77.pdf)
+-->

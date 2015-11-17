@@ -1,9 +1,9 @@
-Urban Decay aka CompostClub
+Compost + Company
 =========
 
-###City food scrap collection & composting [map](https://mashcode.github.io/NYCompost/)
+###inedible food scrap curation in a very big city [map](http://compostandco.marcshifflett.com)
 
-Collect and map neighborhood food scrap diversion data using crowd-sourced metadata
+Curate and map neighborhood food waste diversion data soliciting crowd-sourced metadata
 
 <!-- ![Comment](https://cdn1.iconfinder.com/data/icons/streamline-comments-chat/60/cell-10-10-480.png "Kickstarter Comment")
 -->
@@ -31,13 +31,13 @@ Look at the center of any disruptive idea, you'll always find an activist with q
 See Gihub project for more bullet points & resources =>
 -->
 
-Look at the center of any disruptive idea, you'll always find an activist with questions.
+Look at the center of any strange idea, you'll always find someone with a great question.
 
 [Comment on Kickstarter =>](https://www.kickstarter.com/projects/968545879/107477158?token=d5142f89)
 
 ## Question, questions
 
-* Can we visualize participation over time? Is there even data to measure this? If not, can it be inferred by other means?
+* Can we visualize food waste to compost participation over time? Is there even data to measure this? If not, can it be inferred by other means?
 
 * How does metadata inform participation?
 
@@ -48,12 +48,12 @@ Look at the center of any disruptive idea, you'll always find an activist with q
 * Tests
 * Surveys and polls
 
-## Rules of Compost Club
+## Rules of CompostandCompany
 * Rule 1 keep it close to home
 * Rule 2 keep it close to home
 * Rule 3 relationships = trust
-* Rule 4 {measure ~ data ~ truth} #### The Welty Matrix
-* Rule 5 else Rule 4
+* Rule 4 {measure ~ data ~ truth} 
+* Rule 5 No truth? then Rule 4
 
 ## Some Assumptions
 
@@ -71,13 +71,26 @@ Look at the center of any disruptive idea, you'll always find an activist with q
 
 * Creative ideation
 * Field data collection 
+* Event / Media campaigns
 * Metadata, datasets & APIs
 * Explore sensors
-* GCFS (General Compost Standard;)
+* GCFS (General Compost Standard)
 * Maps, maps, maps
-* Viz, viz, visualization
-* Embed the Discourse platform
+* Viz, viz, visu-a-li-zation
+* Discourse/Slack chat
 * Fun
+
+Rewards
+* Fun
+* Stickers
+* Hemp bags4Bikes
+* Some really special secret stuff
+<!--
+* Pocket composter
+* Microbascope
+-->
+
+# 
 
 ## Resources
 
@@ -95,10 +108,13 @@ _Cradle to Cradle: Remaking the way we make things,_ 2002. Michael Braungart and
 **Web Scraping & Mapping tools**
 
   * [Kimono Labs] (https://www.kimonolabs.com/)
-  * [Tabula PDF](http://tabula.technology/)
+  * [Tabula PDF](https://tabula.technology/)
   * [ScraperWiki] (https://scraperwiki.com/docs/developer/)
   * [QGIS Community](http://www2.qgis.org/en/site/getinvolved/index.html)
-  * [Cartodb]()
+  * [Cartodb](https://cartodb.com)
+
+csv2geojson urban_ag_sites_geocoded.csv > urban_ag_sites_geocoded.geojson
+csv2geojson urban_ag_sites_geoclient.csv > urban_ag_sites_geoclient.geojson
 
 **Reports**
 

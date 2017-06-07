@@ -17,7 +17,7 @@ Design a cheap/portable temperature sensor to monitor the health of compost, ale
 
 Soil/Compost
 
-  a href="http://www.soilfoodweb.com/">Dr. Elaine Ingham</a>
+  <a href="http://www.soilfoodweb.com/">Dr. Elaine Ingham</a>
 
   http://en.permaculturescience.org/english-pages/3-earth-care/soil/d-pioneers/elaine-ingham#TOC-Beneficial-Fungi-found-in-Compost 
 
